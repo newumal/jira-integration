@@ -1,0 +1,37 @@
+{panel:title=📝 Testing Scope & Impacted Areas|borderStyle=solid|borderColor=#ccc|bgColor=#F4F5F7}
+
+✅ *Testing Scope*
+- Verified the Global Add Action in the entity list view.
+- Confirmed that the warning message about entity mismatch is *not shown* when there are no linked entities.
+- Tested all tabs in the Global Add Action (Activity, Email, Task, Note, Pulse) to ensure the warning only appears when there are linked entities and a mismatch.
+- Checked custom objects and other features that use entity linking to ensure consistent behavior.
+- Regression tested scenarios where the warning should still appear (i.e., when there are linked entities and a mismatch).
+
+🚩 *Impacted Areas*
+- *LinkValidationPopover*: The warning message logic is now improved; it will not show if there are no linked entities.
+- *Global Add Action (all tabs)*: Users will not see unnecessary warnings in the entity list view or any context where no entities are linked.
+- *Custom objects using entity linking*: These will also benefit from the improved logic.
+- *No impact* on unrelated features or on cases where the warning should legitimately appear.
+
+🛠️ **Summary of the Fix**
+The `useEntityMismatchWarning` hook was updated to ensure the warning message is only shown if there are actually linked entities.
+This prevents confusion and improves user experience, especially in the entity list view.
+
+{panel}
+
+cc: Gamage Susanthika
+
+Added email template selection functionality to the Activity Log:
+
+- Integrated email template selector component in LogActivity
+- Added state management for selected template and template changes
+- Implemented template content loading and editor integration
+- Added UI for template selection with public/private indicators
+- Improved UX with tooltips and preview functionality
+
+Key changes:
+- New template selector UI with search capability
+- Template preview integration
+- Public/Private template status indicators
+- Automatic editor content population on template selection
+- MJML template processing for HTML content

@@ -1,0 +1,17 @@
+{
+    "name": "jira-cursor-integration",
+    "version": "1.0.0",
+    "description": "Integration between JIRA and Cursor",
+    "main": "src/cli.js",
+    "bin": {
+        "jira": "./src/cli.js"
+    },
+    "scripts": {
+        "start": "node src/cli.js"
+    },
+    "dependencies": {
+        "jira-client": "^8.2.2",
+        "dotenv": "^16.0.3",
+        "node-cron": "^3.0.2"
+    }
+} 

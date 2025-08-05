@@ -1,0 +1,7 @@
+{
+  "issueKey": "ROC-3781",
+  "summary": "Unsaved warning popup not showing in Notes Tab",
+  "description": "*Issue*: Unsaved warning popup not showing in Notes Tab\n\n*Steps to Reproduce*:\n\n# Go to CRM Integration → Salesforce\n# Click on \"Notes\" tab\n# Make any configuration change (toggle sync, check/uncheck options)\n# Click on any other tab (Organizations, Accounts, Contacts, Activities, etc.)\n# *Expected*: Warning popup \"You have unsaved changes\" should appear\n# *Actual*: No warning popup, changes are lost\n\n*Additional Test Scenarios*:\n\n* Try switching between \"IN\" and \"OUT\" side tabs within Notes\n* Try switching between \"Note type configuration\" and other side tabs\n* Try switching between different entity tabs (Organizations → Accounts → Notes)\n\n*Environment*:\n\n* Salesforce integration\n* Any browser\n* Any user role\n\n*Screenshots/Videos*:\n\n* [ ] Screenshot of making changes in Notes tab\n* [ ] Screenshot of switching tabs without warning\n* [ ] Screenshot of expected warning popup (from other tabs)\n\n*Comparison*:\n\n* Activities tab shows warning popup correctly\n* Organizations tab shows warning popup correctly\n* Notes tab should behave the same way",
+  "repoPath": "/Users/user/IdeaProjects/jira-integration",
+  "timestamp": "2025-08-03T17:29:56.816Z"
+}
