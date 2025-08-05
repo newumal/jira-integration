@@ -1,0 +1,13 @@
+{
+    "jira": {
+        "baseUrl": "your-domain.atlassian.net",
+        "email": "your-email@example.com",
+        "apiToken": "your-api-token-here",
+        "projectKey": "YOUR_PROJECT_KEY"
+    },
+    "cursor": {
+        "workspacePath": "/path/to/your/workspace",
+        "autoSync": true,
+        "syncInterval": 300
+    }
+} 
