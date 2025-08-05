@@ -2,6 +2,7 @@
     "name": "jira-cursor-integration",
     "version": "1.0.0",
     "description": "Integration between JIRA and Cursor",
+    "author": "Newumal Weerasinghe",
     "main": "src/cli.js",
     "bin": {
         "jira": "./src/cli.js"
