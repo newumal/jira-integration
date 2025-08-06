@@ -17,6 +17,9 @@ config.json
 # JIRA attachments (downloaded temporarily)
 .jira-attachments/
 
+# Generated prompt files
+cursor-prompt.md
+
 # Logs
 logs
 *.log

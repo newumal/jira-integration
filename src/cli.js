@@ -11,6 +11,7 @@ const { autoComment } = require('./commands/autoComment');
 const { commitAndPush } = require('./commands/commitAndPush');
 const { showHelp } = require('./commands/help');
 const { triggerCursorAgent } = require('./commands/triggerCursorAgent');
+const { generateCursorPrompt } = require('./commands/generateCursorPrompt');
 
 // Get command line arguments
 const args = process.argv.slice(2);
@@ -100,6 +101,14 @@ async function main() {
 
             case 'trigger-cursor-agent':
                 await triggerCursorAgent();
+                break;
+
+            case 'cursor-prompt':
+                const cursorOptions = {
+                    save: args.includes('--save'),
+                    copy: args.includes('--copy')
+                };
+                await generateCursorPrompt(cursorOptions);
                 break;
 
             default:
