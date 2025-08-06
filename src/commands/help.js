@@ -40,21 +40,28 @@ JIRA CLI Commands:
    jira ai-fix <issue-key>
    Example: jira ai-fix WAR-123
    
-   Uses AI to analyze the issue and suggest potential fixes.
+   Analyzes issue and attachments, generates rich context for AI.
 
-8. Auto-comment from changes:
+8. Generate Cursor AI prompt:
+   jira cursor-prompt [--save] [--copy]
+   Example: jira cursor-prompt --save
+   
+   Generates a comprehensive prompt for Cursor AI using the analysis
+   from ai-fix command. Includes all context, attachments, and guidance.
+
+9. Auto-comment from changes:
    jira auto-comment <issue-key>
    Example: jira auto-comment WAR-123
    
    Automatically generates and posts a comment based on recent changes.
 
-9. Commit and push changes:
-   jira commit <issue-key> [message]
-   Example: jira commit WAR-123 "Fix login bug"
-   
-   Commits changes with JIRA-formatted message and pushes to remote.
+10. Commit and push changes:
+    jira commit <issue-key> [message]
+    Example: jira commit WAR-123 "Fix login bug"
+    
+    Commits changes with JIRA-formatted message and pushes to remote.
 
-10. Show this help:
+11. Show this help:
     jira help
 `;
 
