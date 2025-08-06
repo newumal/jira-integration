@@ -12,6 +12,10 @@ class AttachmentAnalyzer {
     constructor(jiraClient) {
         this.jira = jiraClient;
         this.attachmentDir = path.join(process.cwd(), '.jira-attachments');
+        
+        // Load configuration for direct API calls
+        this.config = JSON.parse(fs.readFileSync(path.join(__dirname, '../../config.json'), 'utf8'));
+        
         this.ensureAttachmentDir();
     }
 
@@ -151,8 +155,8 @@ class AttachmentAnalyzer {
             url: attachment.content,
             responseType: 'stream',
             auth: {
-                username: this.jira.username,
-                password: this.jira.password
+                username: this.config.jira.email,    // Use email from config
+                password: this.config.jira.apiToken  // Use API token from config
             },
             timeout: 30000
         });
