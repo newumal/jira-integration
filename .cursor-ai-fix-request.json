@@ -1,7 +1,150 @@
 {
-  "issueKey": "ROC-3781",
-  "summary": "Unsaved warning popup not showing in Notes Tab",
-  "description": "*Issue*: Unsaved warning popup not showing in Notes Tab\n\n*Steps to Reproduce*:\n\n# Go to CRM Integration → Salesforce\n# Click on \"Notes\" tab\n# Make any configuration change (toggle sync, check/uncheck options)\n# Click on any other tab (Organizations, Accounts, Contacts, Activities, etc.)\n# *Expected*: Warning popup \"You have unsaved changes\" should appear\n# *Actual*: No warning popup, changes are lost\n\n*Additional Test Scenarios*:\n\n* Try switching between \"IN\" and \"OUT\" side tabs within Notes\n* Try switching between \"Note type configuration\" and other side tabs\n* Try switching between different entity tabs (Organizations → Accounts → Notes)\n\n*Environment*:\n\n* Salesforce integration\n* Any browser\n* Any user role\n\n*Screenshots/Videos*:\n\n* [ ] Screenshot of making changes in Notes tab\n* [ ] Screenshot of switching tabs without warning\n* [ ] Screenshot of expected warning popup (from other tabs)\n\n*Comparison*:\n\n* Activities tab shows warning popup correctly\n* Organizations tab shows warning popup correctly\n* Notes tab should behave the same way",
+  "issueKey": "ROC-3803",
+  "summary": "Add a message",
+  "description": "For opportunities and Risk in the field Mapping we should Map the Velaris titile. For that we should add the note like that.\n\n!warning-20250806-051730.png|width=382,height=65,alt=\"warning-20250806-051730.png\"!",
+  "status": "In QA",
+  "priority": "Medium",
+  "assignee": "Newumal Weerasinghe",
+  "components": [],
+  "labels": [],
+  "attachments": {
+    "hasAttachments": true,
+    "count": 2,
+    "analysis": [
+      {
+        "id": "25905",
+        "filename": "image-20250806-082638.png",
+        "size": 53175,
+        "mimeType": "image/png",
+        "created": "2025-08-06T17:27:10.057+0900",
+        "author": "Newumal Weerasinghe",
+        "localPath": null,
+        "contentAnalysis": {
+          "type": "image",
+          "downloadFailed": true,
+          "filename": "image-20250806-082638.png",
+          "mimeType": "image/png",
+          "size": 53175,
+          "isScreenshot": false,
+          "isUIElement": false,
+          "isErrorState": false,
+          "extractedElements": [],
+          "suggestedContext": [],
+          "analysisNote": "Analysis based on filename only - visual content not available due to download restrictions"
+        },
+        "aiInsights": {
+          "relevantCodeAreas": [],
+          "suggestedSearchTerms": [],
+          "potentialFiles": [],
+          "implementationHints": [],
+          "priority": "medium"
+        },
+        "downloadError": "Request failed with status code 403"
+      },
+      {
+        "id": "25896",
+        "filename": "warning-20250806-051730.png",
+        "size": 3195,
+        "mimeType": "image/png",
+        "created": "2025-08-06T14:56:47.299+0900",
+        "author": "Randini Maliksha",
+        "localPath": null,
+        "contentAnalysis": {
+          "type": "image",
+          "downloadFailed": true,
+          "filename": "warning-20250806-051730.png",
+          "mimeType": "image/png",
+          "size": 3195,
+          "isScreenshot": false,
+          "isUIElement": false,
+          "isErrorState": true,
+          "extractedElements": [
+            "warning-message"
+          ],
+          "suggestedContext": [
+            "Error state visualization",
+            "Exception handling UI",
+            "Component issue: warning-message"
+          ],
+          "analysisNote": "Analysis based on filename only - visual content not available due to download restrictions"
+        },
+        "aiInsights": {
+          "relevantCodeAreas": [
+            "notification system"
+          ],
+          "suggestedSearchTerms": [
+            "warning-message"
+          ],
+          "potentialFiles": [],
+          "implementationHints": [],
+          "priority": "medium"
+        },
+        "downloadError": "Request failed with status code 403"
+      }
+    ],
+    "summary": {
+      "totalAttachments": 2,
+      "imageCount": 2,
+      "codeFileCount": 0,
+      "textFileCount": 0,
+      "errorCount": 0,
+      "keyFindings": [
+        "2 visual reference(s) available",
+        "UI components identified: warning-message"
+      ],
+      "suggestedInvestigationAreas": [
+        "notification system"
+      ],
+      "extractedUIComponents": [
+        "warning-message"
+      ],
+      "overallPriority": "medium"
+    }
+  },
+  "contextualInsights": {
+    "issueType": "Component Issue",
+    "complexity": "Low",
+    "visualContext": [
+      "Error state visualization provided",
+      "UI elements shown: warning-message"
+    ],
+    "technicalClues": [
+      "Limited technical context available"
+    ],
+    "urgency": "Medium"
+  },
+  "suggestedCodeAreas": [
+    "notification system",
+    "warning-message"
+  ],
+  "searchStrategy": {
+    "primarySearchTerms": [
+      "add",
+      "message",
+      "opportunities",
+      "risk",
+      "field",
+      "mapping",
+      "should",
+      "map",
+      "velaris",
+      "titile"
+    ],
+    "filePatterns": [],
+    "excludePatterns": [
+      "node_modules",
+      ".git",
+      "dist",
+      "build"
+    ],
+    "searchOrder": [
+      "components",
+      "services",
+      "utils",
+      "styles"
+    ]
+  },
   "repoPath": "/Users/user/IdeaProjects/jira-integration",
-  "timestamp": "2025-08-03T17:29:56.816Z"
+  "timestamp": "2025-08-06T08:55:51.036Z",
+  "aiPrompt": "# 🎯 JIRA Issue Analysis with Visual Context\n\n## 📋 Issue Overview\n- **Issue Key**: ROC-3803\n- **Summary**: Add a message\n- **Status**: In QA\n- **Priority**: Medium\n- **Assignee**: Newumal Weerasinghe\n\n## 🔍 AI Analysis Results\n- **Issue Type**: Component Issue\n- **Estimated Complexity**: Low\n- **Overall Priority**: medium\n\n## 📎 Attachment Analysis\n- **Total Attachments**: 2\n- **Images**: 2\n- **Code Files**: 0 \n- **Text/Log Files**: 0\n- **Error Files**: 0\n\n### 🔎 Key Findings\n- 2 visual reference(s) available\n- UI components identified: warning-message\n\n### 🖼️ Visual Evidence Analysis\n\n#### image-20250806-082638.png\n- **Type**: 🖼️ Image\n- **Dimensions**: Unknown\n- **Local Path**: `null`\n\n#### warning-20250806-051730.png\n- **Type**: 🖼️ Image\n- **Dimensions**: Unknown\n- **Local Path**: `null`\n- **UI Elements Detected**: warning-message\n- **Context Hints**: Error state visualization, Exception handling UI, Component issue: warning-message\n- **⚠️ Error State Detected**: This image likely shows an error or problematic state\n\n## 🎯 Investigation Strategy\n\n### 🔍 Primary Focus Areas\n- notification system\n- warning-message\n\n### 🔎 Suggested Search Terms\n- `add`\n- `message`\n- `opportunities`\n- `risk`\n- `field`\n- `mapping`\n- `should`\n- `map`\n\n### 🎨 UI Components to Investigate\n- warning-message\n\n### 🧭 Code Areas to Explore\n- notification system\n\n## 🔧 Technical Context\n\n### 📝 Issue Description\nFor opportunities and Risk in the field Mapping we should Map the Velaris titile. For that we should add the note like that.\n\n!warning-20250806-051730.png|width=382,height=65,alt=\"warning-20250806-051730.png\"!\n\n### 💡 Technical Clues\n- Limited technical context available\n\n### 👁️ Visual Context Insights\n- Error state visualization provided\n- UI elements shown: warning-message\n\n## 🤖 AI Assistant Instructions\n\n### Step-by-Step Approach:\n\n1. **📁 Review Attachments**\n   - 🖼️ **Examine visual evidence** in `.jira-attachments/` folder\n   - Pay special attention to screenshots showing UI issues or error states\n\n2. **🔍 Codebase Analysis**\n   - Search for the identified UI components and code areas\n   - Use the suggested search terms to locate relevant files\n   - Focus on the primary investigation areas listed above\n\n4. **🛠️ Implementation Plan**\n   - Create a clear fix strategy based on your findings\n   - Consider both the technical requirements and visual evidence\n   - Plan for testing to ensure the fix addresses the visual/functional issue\n\n5. **✅ Validation**\n   - Ensure your solution addresses the specific issue shown in attachments\n   - Consider edge cases and potential side effects\n   - Document the changes for future reference\n\n### 💡 Key Priorities:\n- **Visual Accuracy**: If images show the problem, ensure your fix addresses what's shown\n- **Error Resolution**: If error logs are present, fix the root cause, not just symptoms  \n- **Component Integrity**: Maintain existing functionality while fixing the issue\n- **Code Quality**: Follow existing patterns and maintain clean, readable code\n\n---\n*Generated with advanced attachment analysis at 2025-08-06T08:55:51.036Z*\n*Local attachment directory: `.jira-attachments/`*"
 }
